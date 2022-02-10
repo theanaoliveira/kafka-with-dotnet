@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  kafkaapppublisher:
+    image: ${DOCKER_REGISTRY-}kafkaapppublisher
+    build:
+      context: .
+      dockerfile: src/KafkaApp/Dockerfile
